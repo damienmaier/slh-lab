@@ -38,6 +38,8 @@ The script on the server for changing the password. When changing password, the 
 
 ### 2.5. How did you obtain the flag? Describe clearly your attack. In particular, explain where the XSS is and what type of XSS it is
 
+The XSS is in the contact form. If we send javascript code in this form, it will be sent back to the admin when he displays the message. This is a stored XSS.
+
 Using our own account, we change our password to "1234" and display the POST request using the developer tools.
 
 We see that
